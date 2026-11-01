@@ -1,0 +1,10 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Harpy Yayin - TikTok</title></head>
+<body style="font:16px system-ui;margin:40px">
+<p>TikTok baglantisi tamamlaniyor, panele yonlendiriliyorsun...</p>
+<p>Yonlenmezse: <a id="l" href="#">buraya tikla</a></p>
+<script>
+// TikTok'un dondurdugu kodu bu bilgisayardaki Harpy Yayin paneline aktarir. Kod baska hicbir yere gonderilmez.
+var u = 'http://localhost/harpy-yayin/cb_tiktok.php' + location.search;
+document.getElementById('l').href = u;
+if (location.search.indexOf('code=') > -1 || location.search.indexOf('error=') > -1) location.replace(u);
+</script></body></html>
